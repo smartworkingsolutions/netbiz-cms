@@ -1,0 +1,696 @@
+{
+    "key": "group_622614ede1c65",
+    "title": "Footer Settings",
+    "fields": [
+        {
+            "key": "field_622614fd889be",
+            "label": "General Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6226151a889bf",
+            "label": "Select Layout",
+            "name": "select_footer_layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "img-select",
+                "id": ""
+            },
+            "choices": {
+                "footer-1": "<img src=\"http:\/\/netbiz-cms.local\/wp-content\/uploads\/2022\/03\/footer-1.jpg\">",
+                "footer-2": "<img src=\"http:\/\/netbiz-cms.local\/wp-content\/uploads\/2022\/03\/footer-2.jpg\">"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "footer-1",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6226256b87871",
+            "label": "Footer Widget 1",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6226273887872",
+            "label": "Heading",
+            "name": "fw1_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_622627e087873",
+            "label": "Links",
+            "name": "fw1_links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_622627ee87874",
+                    "label": "Link",
+                    "name": "fw1_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_6226281b87875",
+            "label": "Footer Widget 2",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6226282487876",
+            "label": "Heading",
+            "name": "fw2_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6226296787877",
+            "label": "Opening Time",
+            "name": "fw2_opening_time",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Opening Time:<\/h4>\r\n<p>\r\n\tMonday - Friday 9am - 6pm<br>\r\n\tSaturday  9am - 6pm<br>\r\n\tSunday  10am - 4pm\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_622629df87878",
+            "label": "Contact",
+            "name": "fw2_contact",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Contact:<\/h4>\r\n<p>\r\n\tT : <a href=\"tel:01543897737\">01543 897737<\/a><br>\r\n\tE : <a href=\"mailto:info@company.co.uk\">info@company.co.uk<\/a>\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_622629ff87879",
+            "label": "Address",
+            "name": "fw2_address",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Address : <\/h4>\r\n<p>\r\n\tCannock Virage Park, Walsall<br>\r\n\tRoad Cannock, WS11 0NH\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_622634132a2c5",
+            "label": "Social Icons",
+            "name": "fw2_social_icons",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_622634902a2c6",
+                    "label": "Heading",
+                    "name": "fw2_social_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_622634ac2a2c7",
+                    "label": "Icons",
+                    "name": "fw2_social_icons",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Twitter": "Twitter",
+                        "LinkedIn": "LinkedIn",
+                        "Instagram": "Instagram",
+                        "Facebook": "Facebook"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                }
+            ]
+        },
+        {
+            "key": "field_62262c12baa10",
+            "label": "Button",
+            "name": "fw2_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62262aa1b8452",
+            "label": "Links",
+            "name": "fw2_links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62262acbb8454",
+                    "label": "Link",
+                    "name": "fw2_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_62262b0fbaa0a",
+            "label": "Footer Widget 3",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62262b1cbaa0b",
+            "label": "Heading",
+            "name": "fw3_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62262b3ebaa0c",
+            "label": "Opening Time",
+            "name": "fw3_opening_time",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Opening Time:<\/h4>\r\n<p>\r\n\tMonday - Friday 9am - 6pm<br>\r\n\tSaturday  9am - 6pm<br>\r\n\tSunday  10am - 4pm\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_62262b51baa0d",
+            "label": "Contact",
+            "name": "fw3_contact",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Contact:<\/h4>\r\n<p>\r\n\tT : <a href=\"tel:01543897737\">01543 897737<\/a><br>\r\n\tE : <a href=\"mailto:info@company.co.uk\">info@company.co.uk<\/a>\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_62262b68baa0e",
+            "label": "Address",
+            "name": "fw3_address",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4 class=\"font-bold\">Address : <\/h4>\r\n<p>\r\n\tCannock Virage Park, Walsall<br>\r\n\tRoad Cannock, WS11 0NH\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6227330a989c6",
+            "label": "Address",
+            "name": "fw3_address_alt",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<p>\r\n\tAddress Line 01<br>\r\n\tAddress Line 02<br>\r\n\tPostcode\r\n<\/p>\r\n<p><a href=\"#\">XXXXX-XXX_XXX<\/a><\/p>\r\n<p><a href=\"#\">XXXXX-XXX_XXX<\/a><\/p>\r\n<p><a href=\"#\">Email id<\/a><\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_62272dddccc8d",
+            "label": "Social Icons",
+            "name": "fw3_social_icons",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_62272dddccc8e",
+                    "label": "Heading",
+                    "name": "fw3_social_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62272dddccc8f",
+                    "label": "Icons",
+                    "name": "fw3_social_icons",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Twitter": "Twitter",
+                        "LinkedIn": "LinkedIn",
+                        "Instagram": "Instagram",
+                        "Facebook": "Facebook"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                }
+            ]
+        },
+        {
+            "key": "field_62262bf0baa0f",
+            "label": "Button",
+            "name": "fw3_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6226151a889bf",
+                        "operator": "==",
+                        "value": "footer-1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62273c030a780",
+            "label": "Copyrights",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62273c2f0a781",
+            "label": "Copyright Text",
+            "name": "copyright_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Copyright 2022 Brand Name",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62273d020a782",
+            "label": "Menu",
+            "name": "copyright_menu",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62273d2b0a783",
+                    "label": "Menu Item",
+                    "name": "copyright_menu_item",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1646738801
+}

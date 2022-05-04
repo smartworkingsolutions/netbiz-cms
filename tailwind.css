@@ -1,0 +1,52 @@
+@import "css/wordpress";
+@import "css/tailwind-extra";
+@import "css/animations";
+@import "css/woocommerce";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary: #fed928;
+		--color-dark: #000000;
+		--color-dark-section-text: #000000;
+		--color-footer-bg: #000000;
+		--color-footer-text: #ffffff;
+		--color-overlay: #ffffff;
+	}
+	[type='text'],
+	[type='email'],
+	[type='url'],
+	[type='password'],
+	[type='number'],
+	[type='date'],
+	[type='datetime-local'],
+	[type='month'],
+	[type='search'],
+	[type='tel'],
+	[type='time'],
+	[type='week'],
+	[multiple],
+	textarea,
+	select {
+		@apply w-full border-neutral-300 focus:border-theme-color focus:outline-none focus:ring-theme-color py-[10px];
+	}
+}
+@layer components {
+    .button {
+		@apply inline-flex justify-center items-center bg-theme-color hover:bg-dark-color transition ease-in text-dark-section-text hover:text-white px-6 py-3;
+		min-width: 245px;
+		max-height: 56px;
+    }
+	.button.button-white {
+		@apply bg-white hover:bg-dark-color text-dark-color hover:text-white;
+	}
+    .button.button-border {
+    	@apply text-dark-color bg-transparent font-semibold hover:bg-dark-color hover:text-white border-2 border-dark-color;
+    }
+	.button.button-border.button-white {
+		@apply bg-transparent hover:bg-white text-white hover:text-dark-color border-2 border-white;
+	}
+}

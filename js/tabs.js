@@ -1,0 +1,30 @@
+jQuery(document).ready(function() {
+    // Tabs
+    let tabsContainer = document.querySelector("#tabs");
+    let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+    // console.log(tabTogglers);
+
+    tabTogglers.forEach(function(toggler) {
+        toggler.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            let tabName = this.getAttribute("href");
+
+            let tabContents = document.querySelector("#tab-contents");
+
+            for (let i = 0; i < tabContents.children.length; i++) {
+            
+            tabTogglers[i].parentElement.classList.remove("active");
+            tabContents.children[i].classList.remove("hidden");
+            if ("#" + tabContents.children[i].id === tabName) {
+                continue;
+            }
+            tabContents.children[i].classList.add("hidden");
+            
+            }
+            // e.target.parentElement.parentElement.classList.add("bg-theme-color");
+            e.target.parentElement.classList.add("active");
+        });
+    });
+});

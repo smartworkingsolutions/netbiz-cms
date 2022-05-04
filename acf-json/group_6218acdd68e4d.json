@@ -1,0 +1,321 @@
+{
+    "key": "group_6218acdd68e4d",
+    "title": "General Settings",
+    "fields": [
+        {
+            "key": "field_624725c25d531",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_624725d35d532",
+            "label": "Phone Number",
+            "name": "global_phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_624725ed5d533",
+            "label": "Email",
+            "name": "global_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6218b086f118f",
+            "label": "Color Scheme",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6218b0acf1190",
+            "label": "Theme Color",
+            "name": "theme_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fed928",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6218b1cbf1191",
+            "label": "Text Color",
+            "name": "text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_622a0de966965",
+            "label": "Dark Background Text",
+            "name": "dark_background_text_color",
+            "type": "color_picker",
+            "instructions": "This color scheme is only for those section which have background.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_622a0db266963",
+            "label": "Footer Background",
+            "name": "footer_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_622a0dd366964",
+            "label": "Footer Text",
+            "name": "footer_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_624c2b5a785c2",
+            "label": "Overlay Color",
+            "name": "overlay_color",
+            "type": "color_picker",
+            "instructions": "For Slider and only for Tablet\/Mobile screens",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "rgba(255,255,255,0.7)",
+            "enable_opacity": 1,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6218b24da57a4",
+            "label": "Typography Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6218c2425d01d",
+            "label": "Font Settings",
+            "name": "font_settings",
+            "type": "google_font_selector",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "include_web_safe_fonts": 1,
+            "enqueue_font": 1,
+            "default_font": "Roboto"
+        },
+        {
+            "key": "field_621ca48563ec3",
+            "label": "Social Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_621ca49e63ec4",
+            "label": "Facebook URL",
+            "name": "facebook_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621ca4aa63ec5",
+            "label": "Twitter URL",
+            "name": "twitter_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621ca4cf63ec6",
+            "label": "Instagram URL",
+            "name": "instagram_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621ca4dc63ec7",
+            "label": "Linkedin URL",
+            "name": "linkedin_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1649159678
+}

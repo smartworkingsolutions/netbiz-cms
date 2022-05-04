@@ -1,0 +1,62 @@
+{
+    "key": "group_6234865c876a9",
+    "title": "More Settings",
+    "fields": [
+        {
+            "key": "field_623486705256e",
+            "label": "Company Name",
+            "name": "testimonials_company_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6234872f37ccb",
+            "label": "Rating",
+            "name": "testimonials_rating",
+            "type": "star_rating_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "max_stars": 5,
+            "return_type": 0,
+            "allow_half": 0,
+            "theme": "default"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1647875680
+}
