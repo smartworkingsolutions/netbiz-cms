@@ -218,7 +218,7 @@ function add_theme_options() {
 	$footer_bg_color   = get_field( 'footer_background_color', 'options' );
 	$footer_text_color = get_field( 'footer_text_color', 'options' );
 	$overlay_color     = get_field( 'overlay_color', 'options' );
-	$font              = get_field( 'font_settings', 'option' );
+	$font              = get_field( 'typography_settings', 'option' );
 	?>
 	<style>
 		:root {
@@ -230,7 +230,7 @@ function add_theme_options() {
 			--color-overlay: <?php echo esc_html( $overlay_color ); ?>;
 		}
 		body {
-			font-family: '<?php echo $font ? esc_html( $font['font'] ) : 'Roboto'; ?>';
+			font-family: '<?php echo $font ? esc_html( $font['font_family'] ) : 'Roboto'; ?>';
 		}
 	</style>
 	<?php
@@ -260,6 +260,7 @@ require get_template_directory() . '/inc/class-netbiz-actions.php';
 require get_template_directory() . '/inc/class-netbiz-schema.php';
 require get_template_directory() . '/inc/class-custom-post-types.php';
 require get_template_directory() . '/inc/class-netbiz-forms.php';
+require get_template_directory() . '/inc/class-svg-enable.php';
 
 /**
  * Load WooCommerce compatibility file.

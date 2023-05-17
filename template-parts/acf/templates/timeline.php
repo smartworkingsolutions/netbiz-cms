@@ -46,11 +46,11 @@ $heading = get_sub_field( 'timeline_heading' );
 			}
 
 			printf(
-				'<div class="single-item flex flex-col text-center space-y-8">
+				'<div class="single-item flex flex-col text-center space-y-8 pb-12 relative">
 					%s
 					<h3 class="text-2xl font-semibold"><a class="animate-line" href="#">%s</a></h3>
 					<p>%s</p>
-					<div class="hidden xl:block w-7 h-7 rounded-full bg-theme-color mx-auto translate-y-[14px]"></div>
+					<div class="hidden xl:block w-7 h-7 rounded-full bg-theme-color mx-auto absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"></div>
 				</div>',
 				wp_kses_post( $img_html ),
 				wp_kses_post( $post_title ),

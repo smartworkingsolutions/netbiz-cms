@@ -1,6 +1,6 @@
 <?php
 /**
- * The ACF template part for displaying Testimonials.
+ * The ACF template part for displaying Latest News.
  *
  * @package Netbiz
  */

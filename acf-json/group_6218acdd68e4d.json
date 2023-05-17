@@ -190,10 +190,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_6218c2425d01d",
-            "label": "Font Settings",
-            "name": "font_settings",
-            "type": "google_font_selector",
+            "key": "field_63fc94090bd04",
+            "label": "Typography Settings",
+            "name": "typography_settings",
+            "type": "Typography",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -202,9 +202,22 @@
                 "class": "",
                 "id": ""
             },
-            "include_web_safe_fonts": 1,
-            "enqueue_font": 1,
-            "default_font": "Roboto"
+            "display_properties": [
+                "font_family"
+            ],
+            "required_properties": "",
+            "font_size": 15,
+            "font_family": "Roboto",
+            "font_weight": 400,
+            "font_style": "normal",
+            "font_variant": "normal",
+            "font_stretch": "normal",
+            "line_height": "",
+            "letter_spacing": 0,
+            "text_align": "left",
+            "text_color": "#000",
+            "text_decoration": "none",
+            "text_transform": "none"
         },
         {
             "key": "field_621ca48563ec3",
@@ -317,5 +330,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649159678
+    "modified": 1677498606
 }

@@ -1933,8 +1933,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.-translate-y-\[9999px\]{
     --tw-translate-y: -9999px;
     transform: var(--tw-transform);
-}.translate-y-\[14px\]{
-    --tw-translate-y: 14px;
+}.translate-y-1\/2{
+    --tw-translate-y: 50%;
     transform: var(--tw-transform);
 }.-rotate-90{
     --tw-rotate: -90deg;
@@ -2230,6 +2230,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 0.75rem;
 }.pt-8{
     padding-top: 2rem;
+}.pb-12{
+    padding-bottom: 3rem;
 }.text-center{
     text-align: center;
 }.text-right{

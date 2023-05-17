@@ -32,8 +32,8 @@
                 "id": ""
             },
             "choices": {
-                "footer-1": "<img src=\"http:\/\/netbiz-cms.local\/wp-content\/uploads\/2022\/03\/footer-1.jpg\">",
-                "footer-2": "<img src=\"http:\/\/netbiz-cms.local\/wp-content\/uploads\/2022\/03\/footer-2.jpg\">"
+                "footer-1": "<img src=\"..\/wp-content\/themes\/netbiz-cms\/images\/footer-1.jpg\">",
+                "footer-2": "<img src=\"..\/wp-content\/themes\/netbiz-cms\/images\/footer-2.jpg\">"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -692,5 +692,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646738801
+    "modified": 1677514133
 }
