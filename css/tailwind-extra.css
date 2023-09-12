@@ -16,6 +16,9 @@ svg text {
 .sub-menu::before {
     @apply content-[''] bg-transparent w-full h-10 absolute -top-10 left-0;
 }
+.sub-menu.full-menu::before {
+    @apply h-2 absolute -top-2 left-0;
+}
 .mobile-menu-wrapper .close,
 .mobile-menu-wrapper.menu-open .open {
     @apply hidden;

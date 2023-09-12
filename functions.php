@@ -52,6 +52,7 @@ if ( ! function_exists( 'netbiz_setup' ) ) :
 			[
 				'main-menu'  => esc_html__( 'Primary', 'netbiz' ),
 				'slide-menu' => esc_html__( 'Sliding', 'netbiz' ),
+				'full-menu'  => esc_html__( 'Full', 'netbiz' ),
 			]
 		);
 

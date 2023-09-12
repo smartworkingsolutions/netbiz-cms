@@ -5,15 +5,17 @@
  * @package Netbiz
  */
 
-$is_menu = get_field( 'enable_sliding_menu', 'options' );
-if ( ! $is_menu ) {
+$is_menu  = get_field( 'enable_sliding_menu', 'options' );
+$full_nav = new Netbiz_Menu_Walker( 'full-menu' );
+$nav      = new Netbiz_Menu_Walker( 'slide-menu' );
+
+if ( ! $is_menu && ! $nav && ! $full_nav ) {
 	return;
 }
-$nav = new Netbiz_Menu_Walker( 'slide-menu' );
 ?>
 
 <!-- Mobile menu -->
-<div class="mobile-menu slide-close flex flex-col bg-theme-color text-dark-section-text w-96 h-screen overflow-y-scroll px-10 py-2 fixed right-0 top-0 z-30 transition-all duration-200">
+<div class="mobile-menu slide-close flex flex-col bg-theme-color text-dark-section-text w-96 h-screen overflow-y-auto px-10 py-2 fixed right-0 top-0 z-30 transition-all duration-200">
 
 	<div class="close text-2xl mt-8">
 		<button><i class="fal fa-times"></i></button>

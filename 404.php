@@ -15,7 +15,7 @@ $btn     = get_field( 'error_button', 'option' );
 
 ?>
 
-<section class="">
+<section class="wysiwyg-editor">
 	<div class="container">
 
 		<div class="text-center mt-26">

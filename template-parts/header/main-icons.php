@@ -8,6 +8,12 @@
 $is_search = get_field( 'enable_search', 'options' );
 $is_menu   = get_field( 'enable_sliding_menu', 'options' );
 $btn       = get_field( 'add_button_optional', 'options' );
+$full_nav  = new Netbiz_Menu_Walker( 'full-menu' );
+
+$ham_icon_classes = '';
+if ( ! $is_menu && $full_nav ) {
+	$ham_icon_classes = ' xl:hidden';
+}
 ?>
 
 <div class="header-icons flex items-center ml-10 space-x-4 sm:space-x-6 lg:space-x-8 text-theme-color text-2xl">
@@ -40,9 +46,9 @@ $btn       = get_field( 'add_button_optional', 'options' );
 		</div>
 		<?php
 	}
-	if ( $is_menu ) {
+	if ( $is_menu || $full_nav ) {
 		?>
-		<div class="mobile-menu-wrapper">
+		<div class="mobile-menu-wrapper<?php echo esc_html( $ham_icon_classes ); ?>">
 			<button class="mobile-menu-button hover:text-dark-color">
 				<i class="fa fa-bars"></i>
 			</button>

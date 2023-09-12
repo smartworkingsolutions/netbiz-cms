@@ -60,18 +60,19 @@ $heading = get_sub_field( 'specialists_heading' );
 					);
 				}
 				if ( $email || $phone || $web ) {
-					$footer = sprintf(
-						'<footer class="flex justify-between bg-theme-color text-dark-section-text text-2xl px-10 py-3">
-							<a href="mailto:%s"><i class="far fa-envelope"></i></a>
-							<span>|</span>
-							<a href="tel:%s"><i class="far fa-phone"></i></a>
-							<span>|</span>
-							<a href="%s"><i class="far fa-user"></i></a>
-						</footer>',
-						$email,
-						$phone,
-						$web
-					);
+					$footer = '<footer class="flex justify-between bg-theme-color text-dark-section-text text-2xl px-10 py-3">';
+					if ( $email ) {
+						$footer .= '<a href="mailto:' . $email . '"><i class="far fa-envelope"></i></a>';
+					}
+					if ( $phone ) {
+						$footer .= '<span>|</span>';
+						$footer .= '<a href="tel:' . $phone . '"><i class="far fa-phone"></i></a>';
+					}
+					if ( $web ) {
+						$footer .= '<span>|</span>';
+						$footer .= '<a href="' . $web . '"><i class="far fa-user"></i></a>';
+					}
+					$footer .= '</footer>';
 				}
 
 				printf(

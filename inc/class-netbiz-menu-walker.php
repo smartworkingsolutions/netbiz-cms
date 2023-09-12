@@ -48,20 +48,29 @@ class Netbiz_Menu_Walker {
 	 */
 	public function build_menu( $loc = '' ) {
 
+		if ( ! $this->data ) {
+			return;
+		}
+
 		global $options;
 		global $wp;
 		$current_url = home_url( add_query_arg( [], $wp->request ) ) . '/';
 
 		$menu_html = '<ul class="parent flex items-center text-xl xl:space-x-8 2xl:space-x-10">';
+		$dropdown  = ' top-[72px]';
 
 		if ( 'mobile' === $loc ) {
 			$menu_html = '<ul class="flex flex-col text-xl font-bold text-right space-y-8">';
+		}
+		if ( 'full' === $loc ) {
+			$menu_html = '<ul class="full-parent h-14 flex gap-4 justify-between items-center">';
+			$dropdown  = ' top-[42px] full-menu';
 		}
 
 		foreach ( $this->data as $link ) {
 
 			$current        = ( $current_url === $link['url'] ) ? true : false;
-			$mobile_submenu = 'sub-menu w-60 bg-theme-color p-5 text-dark-color space-y-4 absolute top-[72px] -left-5 hidden group-hover:block shadow-md';
+			$mobile_submenu = 'sub-menu w-60 bg-theme-color p-5 text-dark-color space-y-4 absolute -left-5 hidden group-hover:block shadow-md z-10' . $dropdown;
 			$caret          = '';
 
 			if ( $current && 'mobile' !== $loc ) {
@@ -69,6 +78,9 @@ class Netbiz_Menu_Walker {
 			}
 			if ( ! $current ) {
 				$classes = 'flex items-center hover:text-theme-color';
+			}
+			if ( 'full' === $loc ) {
+				$classes = 'flex items-center hover:text-white';
 			}
 			if ( 'mobile' === $loc ) {
 				$classes        = 'block';

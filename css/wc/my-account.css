@@ -10,6 +10,9 @@
 .woocommerce-MyAccount-navigation li.is-active {
     @apply bg-theme-color;
 }
+.woocommerce-MyAccount-navigation li.is-active a {
+    @apply text-dark-section-text;
+}
 .woocommerce-MyAccount-content {
     @apply md:col-span-3 space-y-6;
 }

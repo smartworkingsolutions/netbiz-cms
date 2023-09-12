@@ -35,6 +35,11 @@ Text Domain: netbiz
     background-color: transparent;
     --tw-content: '';
     content: var(--tw-content);
+}.sub-menu.full-menu::before{
+    position: absolute;
+    top: -0.5rem;
+    left: 0px;
+    height: 0.5rem;
 }.mobile-menu-wrapper .close, .mobile-menu-wrapper.menu-open .open{
     display: none;
 }.mobile-menu-wrapper.menu-open .close{
@@ -1119,6 +1124,8 @@ table.shop_table_responsive tr td.download-actions::before {
     padding-right: 1.5rem;
 }.woocommerce-MyAccount-navigation li.is-active{
     background-color: var(--color-primary);
+}.woocommerce-MyAccount-navigation li.is-active a{
+    color: var(--color-dark-section-text);
 }.woocommerce-MyAccount-content > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1731,6 +1738,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 50%;
 }.top-\[72px\]{
     top: 72px;
+}.top-\[42px\]{
+    top: 42px;
 }.-left-5{
     left: -1.25rem;
 }.-top-1{
@@ -1751,10 +1760,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 1rem;
 }.right-4{
     right: 1rem;
-}.z-\[1\]{
-    z-index: 1;
 }.z-10{
     z-index: 10;
+}.z-\[1\]{
+    z-index: 1;
 }.z-20{
     z-index: 20;
 }.z-30{
@@ -1969,10 +1978,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1.5rem;
 }.gap-2{
     gap: 0.5rem;
-}.gap-12{
-    gap: 3rem;
 }.gap-4{
     gap: 1rem;
+}.gap-12{
+    gap: 3rem;
 }.gap-11{
     gap: 2.75rem;
 }.gap-8{
@@ -2050,8 +2059,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }.overflow-hidden{
     overflow: hidden;
-}.overflow-y-scroll{
-    overflow-y: scroll;
+}.overflow-y-auto{
+    overflow-y: auto;
 }.whitespace-nowrap{
     white-space: nowrap;
 }.rounded-full{

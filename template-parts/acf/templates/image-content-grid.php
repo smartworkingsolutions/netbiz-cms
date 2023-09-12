@@ -17,7 +17,7 @@ $is_background = get_sub_field( 'image_content_background' );
 $order_class   = '';
 $classes       = 'image-content-wrapper mt-12';
 
-if ( ! $image['url'] && ! $content ) {
+if ( ! get_sub_field( 'image_content_image' ) && ! $content && ! $heading ) {
 	return;
 }
 if ( $is_background ) {
@@ -33,7 +33,7 @@ if ( 'content' === $layout ) {
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
 			<?php
-			if ( $image['url'] ) {
+			if ( get_sub_field( 'image_content_image' ) ) {
 				echo '<div class="image"><img class="w-full" src="' . esc_url( $image['url'] ) . '"></div>';
 			}
 

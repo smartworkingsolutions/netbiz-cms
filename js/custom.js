@@ -86,6 +86,12 @@ jQuery(document).ready(function() {
 	jQuery(".main-nav ul.parent")
 	.clone()
 	.removeClass()
+	.addClass('flex flex-col text-xl font-bold text-right space-y-8 mt-4')
+	.appendTo('nav.clone');
+	// Add full nav in side-menu
+	jQuery(".full-nav ul.full-parent")
+	.clone()
+	.removeClass()
 	.addClass('flex flex-col text-xl font-bold text-right space-y-8')
 	.appendTo('nav.clone');
 	// remove link and dropdown classes

@@ -276,7 +276,7 @@ function theme_header_html() {
 	<!-- Header end -->
 
 	<?php
-
+	get_template_part( 'template-parts/header/full', 'menu' );
 }
 
 /**
